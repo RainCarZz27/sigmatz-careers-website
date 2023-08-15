@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Mortgage Form</title>
+  </head>
+  <body>
+    <form action="#" class="form">
+      <h1 class="text-center">To allow our licensed mortgage agents to better serve you, please tell us a little bit about yourself</h1>
+      <!-- Progress bar -->
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        
+        <div
+          class="progress-step progress-step-active"
+        
+        ></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+      </div>
+
+      <!-- Steps -->
+      <div class="form-step form-step-active" id="step1">
+        <p for="question">Were you looking to Purchase or Refinance?
+          <div id="answer_btn">
+            <a href="#" class="button1" onclick="nextStep(2)">Purchase</a>
+            <a href="#" class="button1" onclick="nextStep(2)">Refinance</a>
+          </div>
+        </p>
+      </div>
+      <div class="form-step" id="step2">
+        <p for="question">What term of mortgage are you interested in?
+          <a href="#" class="button1" onclick="nextStep(3)">30 Years</a>
+          <a href="#" class="button1" onclick="nextStep(3)">15 Years</a>
+          <a href="#" class="button1" onclick="nextStep(3)">Other</a>
+        </p>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+        </div>
+      </div>
+      <div class="form-step" id="step3">
+        <div class="input-group">
+          <label for="dob">What is the loan amount you were looking for?</label>
+          <input type="number" placeholder="Enter Amount" />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next" onclick="nextStep(4)">Next</a>
+        </div>
+      </div>
+      <div class="form-step" id="step4">
+        <label for="question">Have you identified the property?
+          <a href="#" class="button1" onclick="nextStep(5)">Yes</a>
+          <a href="#" class="button1" onclick="nextStep(6)">If no, please click to select</a>
+        </label>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+        </div>
+      </div>
+      <div class="form-step" id="step5">
+        <label for="question">This is your chosen property
+          <a href="#" class="button1" onclick="nextStep(7)">Condominium/Townhouse</a>
+        </label>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+        </div>
+      </div>
+      <div class="form-step" id="step6">
+        <label for="question">Have you identified the property?
+          <a href="#" class="button1" onclick="nextStep(7)">Single Family</a>
+          <a href="#" class="button1" onclick="nextStep(7)">Condominium/Townhouse</a>
+          <a href="#" class="button1" onclick="nextStep(7)">Multi Family</a>
+          <a href="#" class="button1" onclick="nextStep(7)">Manufacturing</a>
+          <a href="#" class="button1" onclick="nextStep(7)">Commercial</a>
+        </label>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+        </div>
+      </div>
+      <div class="form-step" id="step7">
+        <label for="question">What is the occupancy status?
+          <a href="#" class="button1" onclick="nextStep(7)">Primary</a>
+          <a href="#" class="button1" onclick="nextStep(7)">2nd Home</a>
+          <a href="#" class="button1" onclick="nextStep(7)">Rental</a>
+        </label>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+        </div>
+      </div>
+      <div class="form-step" id="step8">
+        <div class="input-group">
+          <label for="loanDownPayment">What will be your down payment(in dollars)</label>
+          <input type="number" placeholder="Enter Amount" />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next" onclick="nextStep(9)">Next</a>
+        </div>
+      </div>
+      <div class="form-step" id="step9">
+        <label for="question">Are you self-employed?
+          <a href="#" class="button1" onclick="nextStep(10)">Primary</a>
+          <a href="#" class="button1" onclick="nextStep(10)">2nd Home</a>
+          <a href="#" class="button1" onclick="nextStep(10)">Rental</a>
+        </label>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+        </div>
+      </div>
+      <div class="form-step" id="step10">
+        <div class="input-group">
+          <label for="loanDownPayment">Current Approximate Credit Score</label>
+          <input type="number" placeholder="000" />
+        </div> 
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next" onclick="nextStep(9)">Next</a>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
+
